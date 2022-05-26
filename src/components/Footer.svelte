@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <footer>
 <div class="copyright">copyright</div>
 </footer>
