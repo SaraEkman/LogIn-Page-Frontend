@@ -105,13 +105,16 @@
     color: crimson;
     text-align: center;
   }
+  .color {
+    color: #45c496;;
+  }
 </style>
 
 <main in:fade out:scale|local>
   <div>
     <Button type="secondary" on:click={toggleLogIn}>Logga in</Button>
     <Button type="secondary" on:click={toggleCreateNUser}>
-      Skapa användare
+      Registrera dig
     </Button>
   </div>
   {#if ErrorNotFoundUser}
@@ -119,7 +122,7 @@
   {:else if ErrorFoundUser}
     <h3>Du har redan inlogningsuppgifter, logga in istället!</h3>
   {:else if ableToLogIn}
-    <h3>Du kan logga in nu.</h3>
+    <h3 class="color">Du kan logga in nu.</h3>
   {:else if emptyErr}
     <h3>Fyll i formuläret tack!</h3>
   {:else if ErrorPass}
